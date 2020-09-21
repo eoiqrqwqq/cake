@@ -26,3 +26,17 @@
 2020-09-21 13:40:36,364 INFO 18856 [egg:core] dump config after load, 9ms
 2020-09-21 13:40:36,383 INFO 18856 [egg-watcher:application] watcher start success
 2020-09-21 13:40:36,400 INFO 18856 [egg:core] dump config after ready, 6ms
+2020-09-21 13:42:31,427 INFO 16284 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\DELL\\Desktop\\cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-09-21 13:42:31,456 INFO 16284 [egg-multipart] file mode enable
+2020-09-21 13:42:31,456 INFO 16284 [egg-multipart] will save temporary files to "C:\\Users\\DELL\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
+2020-09-21 13:42:31,550 INFO 16284 [egg-static] starting static serve /public/ -> C:\Users\DELL\Desktop\cake\cake\server\app\public
+2020-09-21 13:42:31,553 INFO 16284 [egg-security] use methodnoallow middleware
+2020-09-21 13:42:31,553 INFO 16284 [egg-security] use noopen middleware
+2020-09-21 13:42:31,554 INFO 16284 [egg-security] use nosniff middleware
+2020-09-21 13:42:31,555 INFO 16284 [egg-security] use xssProtection middleware
+2020-09-21 13:42:31,555 INFO 16284 [egg-security] use xframe middleware
+2020-09-21 13:42:31,555 INFO 16284 [egg-security] use dta middleware
+2020-09-21 13:42:31,555 INFO 16284 [egg-security] compose 6 middlewares into one security middleware
+2020-09-21 13:42:31,565 INFO 16284 [egg:core] dump config after load, 6ms
+2020-09-21 13:42:31,581 INFO 16284 [egg-watcher:application] watcher start success
+2020-09-21 13:42:31,592 INFO 16284 [egg:core] dump config after ready, 4ms
