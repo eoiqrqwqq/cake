@@ -1,7 +1,7 @@
 <template>
 	<div class="top-nav">
 		<div class="nav-left">
-			<div>logo</div>
+			<div style="margin-left: 30px;">logo</div>
 			<div class="nav-mid">
 				<router-link to="/home">首页</router-link>
 				<router-link to="/cake">蛋糕</router-link>
@@ -11,6 +11,15 @@
 				<router-link to="/aroundcity">全球送</router-link>
 				<router-link to="/business">企业专区</router-link>
 			</div>
+		</div>
+		<div class="nav-right">
+			<span>APP下载</span>
+			<span>上海↓</span>
+			<router-link to="">消息</router-link>
+			<router-link to="">登录</router-link>
+			<span style="margin: 0 -20px;">/</span>
+			<router-link to="">注册</router-link>
+			<router-link to>购物车</router-link>
 		</div>
 	</div>
 </template>
@@ -22,7 +31,7 @@
 	a {
 		color: #584133;
 		text-decoration: none;
-		padding: 10px 20px;
+		margin: 10px 20px;
 		line-height: 65px;
 		font-size: 14px;
 	}
@@ -33,8 +42,6 @@
 
 	.nav-left {
 		display: flex;
-		width: 1200px;
-		margin: 0 auto;
 	}
 
 	.nav-left div {
@@ -43,5 +50,24 @@
 
 	.nav-mid {
 		margin-left: 50px;
+	}
+	.top-nav{
+		position: fixed;
+		display: flex;
+		top: 0;
+		padding-left:100px ;
+		background-color: white;
+		width: 100%;
+		box-shadow:5px 5px 5px #E9E9E9 ;
+	}
+	.nav-right{
+		line-height: 75px;
+		margin-left: 100px;
+	}
+	span{
+		font-size: 14px;
+		cursor: pointer;
+		margin: 0 10px;
+		color: #584133;
 	}
 </style>

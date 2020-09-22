@@ -1,7 +1,7 @@
 <template>
 	<div class="select">
 		<slot></slot>
-		<el-select v-model="value" placeholder="请选择" style="padding-left: 31px;">
+		<el-select v-model="value" placeholder="请选择" style="padding-left: 24px;">
 			<el-option v-for="item in proData_" :key="item.pk" :label="item.pv" :value="item.pk">
 			</el-option>
 		</el-select>
