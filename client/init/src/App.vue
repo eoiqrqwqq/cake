@@ -1,6 +1,6 @@
 <template>
  <div>
-  <qiye></qiye>
+  <!-- <qiye></qiye> -->
  <topnav></topnav>
  <router-view></router-view>
  </div>
@@ -8,13 +8,12 @@
 
 <script>
 
-import qiye from '@/views/qiye.vue'
+// import qiye from '@/views/qiye.vue'
 import topnav from "./components/wang-component/topnav.vue"
 
 export default { 
   name: 'App',
   components: {
-    qiye,
 	topnav
   }
 }
