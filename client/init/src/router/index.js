@@ -12,7 +12,29 @@ const router = new VueRouter({
   {
     path: '/aroundcity',
     name: 'aroundcity',
-    component: () => import('../views/aroundcity.vue')
+    component: () => import('../views/aroundcity.vue'),
+	children:[
+		{
+			path:"/aroundbread",
+			name:"aroundbread",
+			component: () => import("@/views/aroundcity-views/aroundbread.vue")
+		},
+		{
+			path:"/aroundcake",
+			name:"aroundcake",
+			component: () => import("@/views/aroundcity-views/aroundcake.vue")
+		},
+		{
+			path:"/aroundcoffee",
+			name:"aroundcoffee",
+			component: () => import("@/views/aroundcity-views/aroundcoffee.vue")
+		},
+		{
+			path:"/aroundnut",
+			name:"aroundnut",
+			component: () => import("@/views/aroundcity-views/aroundnut.vue")
+		}
+	]
   },
   {
     path: '/home',

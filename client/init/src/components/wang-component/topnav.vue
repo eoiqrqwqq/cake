@@ -44,4 +44,12 @@
 	.nav-mid {
 		margin-left: 50px;
 	}
+	.top-nav{
+		position: fixed;
+		top: 0;
+		padding-left:100px ;
+		background-color: white;
+		width: 100%;
+		box-shadow:5px 5px 5px #E9E9E9 ;
+	}
 </style>

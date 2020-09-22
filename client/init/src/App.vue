@@ -1,6 +1,6 @@
 <template>
  <div>
-  <qiye></qiye>
+  <!-- <qiye></qiye> -->
  <topnav></topnav>
  <router-view></router-view>
  </div>
