@@ -1,6 +1,6 @@
 <template>
 	<div>
-		这是首页的内容
+		这是企业内容
 	</div>
 </template>
 

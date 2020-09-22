@@ -1,6 +1,6 @@
 <template>
 	<div>
-		这是首页的内容
+		这是咖啡的内容
 	</div>
 </template>
 

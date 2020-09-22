@@ -1,6 +1,6 @@
 <template>
 	<div>
-		这是首页的内容
+		这是蛋糕的内容
 	</div>
 </template>
 

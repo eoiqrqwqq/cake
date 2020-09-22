@@ -5,5 +5,9 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/', controller.home.index);
+   // router.post('/register', controller.user.register);
+    // router.get('/verif', controller.user.verif);//验证码
+    // router.post('/login', controller.user.login);
+    // router.get('/userinfo', controller.user.userinfo);
+    // router.get('/car', controller.car.car);
 };
