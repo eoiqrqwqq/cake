@@ -66,6 +66,11 @@ const router = new VueRouter({
     name: 'business',
     component: () => import('../views/business.vue')
   },
+  {
+    path: '/bread1',
+    name: 'bread1',
+    component: () => import('../views/aroundcity-views/good-vue/bread1.vue')
+  },
 ]
 })
 
