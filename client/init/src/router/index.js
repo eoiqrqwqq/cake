@@ -131,6 +131,27 @@ const router = new VueRouter({
     name: 'bread1',
     component: () => import('../views/aroundcity-views/good-vue/bread1.vue')
   },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import("@/views/login/login.vue")
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    // component: ()=>
+    component: () => import("@/views/login/register.vue")
+  },
+  {
+    path: '/resetpwd',
+    name: 'Resetpwd',
+    component: () => import("@/views/login/resetpwd.vue"),
+  },
+  {
+    path: '/userinfo',
+    name: 'Userinfo',
+    component: () => import("@/views/login/userinfo/userinfo.vue"),
+  },
 ]
 })
 

@@ -16,9 +16,9 @@
 			<span>APP下载</span>
 			<span>上海↓</span>
 			<router-link to="">消息</router-link>
-			<router-link to="">登录</router-link>
+			<router-link to="/login">登录</router-link>
 			<span style="margin: 0 -20px;">/</span>
-			<router-link to="">注册</router-link>
+			<router-link to="/register">注册</router-link>
 			<router-link to>购物车</router-link>
 		</div>
 	</div>
@@ -59,6 +59,7 @@
 		background-color: white;
 		width: 100%;
 		box-shadow:5px 5px 5px #E9E9E9 ;
+		z-index: 9999;
 	}
 	.nav-right{
 		line-height: 75px;

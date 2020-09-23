@@ -17,6 +17,7 @@
 export default {
     data(){
         return {
+            str:[],
             arr:[{
                img:"https://static.21cake.com//upload/images/8e5930873714d422476417759b01e4b8.png",
                name:'蔓生',
@@ -25,7 +26,15 @@ export default {
                price:'198.00'
            }]
         }
-    }
+    },
+    mounted() {
+        this.$axios.get("/home")
+        .then((res)=>{
+            // console.log(res)
+            this.str=res.data
+            console.log(res.data)
+        })
+	},
 }
 </script>
 <style scoped>
