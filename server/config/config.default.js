@@ -48,7 +48,7 @@ module.exports = appInfo => {
   // 跨域的配置
   //credentials: true,//跨域服务的页面去做cookie缓存
   config.cors = {
-    origin: 'http://127.0.0.1:8081',
+    origin: 'http://127.0.0.1:8082',
     credentials: true,//后端会去前端返回储存数据包，告诉浏览器去做缓存
   };
   // 配置安全验证 post请求
