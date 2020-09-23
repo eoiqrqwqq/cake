@@ -3,7 +3,7 @@
         <div class="dingzhi ">  
             <p><img :src="imgs[0].title" alt=""></p>
             <a class="go_dingzhi_box" href="">
-                <p class="go_dingzhi">去定制>></p>
+                <router-link to="/godingzhi" class="go_dingzhi">去定制>></router-link>
                 <img :src="imgs[1].img" alt="">
             </a>
         </div>

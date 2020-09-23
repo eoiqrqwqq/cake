@@ -17,7 +17,17 @@ CREATE TABLE IF NOT EXISTS `classify` (
   PRIMARY KEY (`Cid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='分类';
 
--- 数据导出被取消选择。
+-- 正在导出表  cake.classify 的数据：~6 rows (大约)
+/*!40000 ALTER TABLE `classify` DISABLE KEYS */;
+INSERT IGNORE INTO `classify` (`Cid`, `Cname`) VALUES
+	(1, '蛋糕'),
+	(2, '冰淇淋'),
+	(3, '咖啡下午茶'),
+	(4, '常温蛋糕'),
+	(5, '设计师礼品'),
+	(6, '面包');
+/*!40000 ALTER TABLE `classify` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
