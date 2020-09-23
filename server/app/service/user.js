@@ -1,13 +1,35 @@
 'use strict';
-
 const Service = require('egg').Service;
 const svgCaptcha = require("svg-captcha")
 
 class UserService extends Service {
+    async editinfo(userinfo) {
+        console.log(userinfo);
+        //   intName: '邰静明',
+        //   intEmail: '1255@qq.com',
+        //   radio: '1',
+        //   birth: 'Tue Sep 08 2020 00:00:00 GMT+0800 (中国标准时间)'
+        let sql = `update user set name="${userinfo.intName}",email="${userinfo.intEmail}",birth="${userinfo.birth}" ,sex="${userinfo.radio}"
+        where phone="${this.ctx.session.phone1}"`
+        let results1 = await this.app.mysql.query(sql)
+        return '66'
+    }
+    async userinfo() {
+        if (this.ctx.session.phone) {
+            console.log('是否登录', this.ctx.session.phone);
+            let sql = `select img from user where phone ="${this.ctx.session.phone}"`
+            let results1 = await this.app.mysql.query(sql)
+            console.log(results1.img);
+            return { code: 2001, info: "用户已登录", phone: this.ctx.session.phone, img: results1 }
+        } else {
+            return { code: 4001, info: "用户未登录" }
+        }
+    }
+
     async reset2(arg) {
         console.log(this.ctx.session.phone);//要修改密码的账号
         console.log(arg.pwd);
-        let sql = `update user set pwd="${arg.pwd}" where phone="${this.ctx.session.phone}"`
+        let sql = `update user set pwd="${arg.pwd}" where phone="${this.ctx.session.phone1}"`
         let results1 = await this.app.mysql.query(sql)
         if (results1.affectedRows > 0) {
             return { code: 2001, info: "密码修改成功" }
@@ -20,7 +42,7 @@ class UserService extends Service {
             return { code: 4001, info: "验证码错误" }
         } else {
             if (results[0]) {
-                this.ctx.session.phone = phone.mobile;
+                this.ctx.session.phone1 = phone.mobile;
                 return { code: 2001, info: "手机号验证成功" }
             } else {
                 return { code: 4002, info: "该手机还未注册" }
@@ -38,7 +60,7 @@ class UserService extends Service {
             if (results[0]) {
                 return { code: 4002, info: "手机号已经注册过" }
             } else {
-                var sql = `insert into user (phone,pwd,birth) values ("${userinfo.mobile}","${userinfo.pwd1}","${userinfo.birth}")`
+                var sql = `insert into user (phone,pwd,birth,img) values ("${userinfo.mobile}","${userinfo.pwd1}","${userinfo.birth}","${userinfo.img}")`
                 var results1 = await this.app.mysql.query(sql)
                 if (results1.affectedRows > 0) {
                     return { code: 2001, info: "注册成功" }
@@ -72,6 +94,8 @@ class UserService extends Service {
             let result2 = await this.app.mysql.query(sql2);
             if (result1[0]) {//验证账号是否存在
                 if (result2[0]) {//账号存在、密码正确
+                    //验证通过，用户账号正确，浏览器做cookie缓存
+                    this.ctx.session.phone = userinfo.mobile;
                     return { code: 2001, info: "登录成功" }
                 } else {
                     return { code: 4001, info: "密码错误" }

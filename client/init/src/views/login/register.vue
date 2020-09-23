@@ -3,16 +3,36 @@
     <img :src="bgimg" width="1580" height="680" alt />
     <div class="register">
       <div>用户注册</div>
-      <input type="text" @change="change1($event)" v-model="inp1" placeholder="请输入手机号" />
       <input
         type="text"
+        @change="change1($event)"
+        v-model="inp1"
+        placeholder="请输入手机号"
+      />
+      <input
+        type="password"
         @change="change2($event)"
         v-model="inp2"
         placeholder="密码：请输入6~18字符，需同时英文开头和数字"
       />
-      <input type="text" @change="change3($event)" v-model="inp3" placeholder="确认密码" />
+
+      <input
+        type="password"
+        @change="change3($event)"
+        v-model="inp3"
+        placeholder="确认密码"
+      />
+      <label for="">
+        头像: <input type="file" @change="change4($event)" />
+      </label>
+
       <div class="duanxinyanzhengBox">
-        <input type="text" class="duanxinyanzheng" v-model="inp4" placeholder="短信验证码" />
+        <input
+          type="text"
+          class="duanxinyanzheng"
+          v-model="inp4"
+          placeholder="短信验证码"
+        />
         <span class="getVerif" @click="verif()" v-html="svg"></span>
       </div>
       <div>
@@ -20,7 +40,7 @@
         <p>请选择生日</p>
         <input type="date" v-model="inp5" placeholder="请选择生日" name id />
       </div>
-      <div :style="{visibility:isShow}" class="myint">{{msg}}</div>
+      <div :style="{ visibility: isShow }" class="myint">{{ msg }}</div>
       <div class="registerBtn" @click="send()">注册</div>
       <div class="duanxinyanzhengBox1">
         <input type="checkbox" checked name id />
@@ -36,6 +56,7 @@
 export default {
   data() {
     return {
+      file1: "",
       isShow: "hidden",
       inp1: "",
       inp2: "",
@@ -83,6 +104,11 @@ export default {
         this.isShow = "hidden";
       }
     },
+
+    change4(e) {
+      console.log(e.target.files);
+      this.file1 = e.target.files[0];
+    },
     send() {
       let reg1 = /^1[3456789]\d{9}$/;
       let reg2 = /^[a-zA-Z]\w{5,17}$/;
@@ -94,6 +120,7 @@ export default {
       f.append("pwd1", this.inp2);
       f.append("verif", this.inp4);
       f.append("birth", this.inp5);
+      f.append("touxiang", this.file1);
       console.log(res1, res2, this.inp2 == this.inp3);
       if (res1 && res2 && this.inp2 == this.inp3) {
         this.$axios
@@ -121,6 +148,7 @@ export default {
 .registerBox {
   position: relative;
   height: 980px;
+  top: 100px;
 }
 .register {
   display: flex;
@@ -170,6 +198,11 @@ input[type="checkbox"] {
   width: 13px;
   height: 13px;
 }
+input[type="file"] {
+  border: 0;
+  margin: 0;
+  height: 40px;
+}
 .myint {
   height: 35px;
   color: red;
@@ -187,7 +220,6 @@ input[type="checkbox"] {
 .duanxinyanzhengBox .getVerif {
   font-size: 12px;
   display: block;
-  /* border: 1px solid #cccccc; */
   color: #cccccc;
   margin-left: 18px;
   padding: 8px 18px;

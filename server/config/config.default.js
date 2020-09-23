@@ -42,7 +42,7 @@ module.exports = appInfo => {
       // 密码
       password: 'root',
       // 数据库名
-      database: 'object',
+      database: 'cake',
     }
   };
   // 跨域的配置

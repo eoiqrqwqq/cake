@@ -44,8 +44,8 @@ export default {
 <style scoped='scoped'>
 .loginbox {
   position: relative;
+  top: 100px;
 }
-
 .loginbox_title {
   width: 388px;
   padding: 50px;

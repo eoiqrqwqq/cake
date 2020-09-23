@@ -1,12 +1,23 @@
 <template>
   <div>
     <div class="myinput">
-      <input type="text" v-model="inp1" @change="change1($event)" class="inp1" placeholder="请输入手机号" />
+      <input
+        type="text"
+        v-model="inp1"
+        @change="change1($event)"
+        class="inp1"
+        placeholder="请输入手机号"
+      />
       <div class="yanzheng">
-        <input type="text" v-model="verif" class="inp2" placeholder="请输入验证码" />
+        <input
+          type="text"
+          v-model="verif"
+          class="inp2"
+          placeholder="请输入验证码"
+        />
         <span class="yanzheng-r" @click="verif1()" v-html="svg"></span>
       </div>
-      <div :style="{visibility:isShow}" class="hidden1">{{msg}}</div>
+      <div :style="{ visibility: isShow }" class="hidden1">{{ msg }}</div>
       <div class="btn" @click="login()">登录</div>
       <div class="anniu">
         <div>
@@ -14,7 +25,8 @@
           <span>记住账号</span>
         </div>
         <div>
-          <router-link to="/resetpwd">忘记密码</router-link>&nbsp;&nbsp;&nbsp;&nbsp;
+          <router-link to="/resetpwd">忘记密码</router-link
+          >&nbsp;&nbsp;&nbsp;&nbsp;
           <router-link to="/register">去注册</router-link>
         </div>
       </div>
@@ -68,6 +80,7 @@ export default {
           .then((res) => {
             // console.log(res.data.code);
             if (res.data.code == 2001) {
+              localStorage.setItem("isLogin", true);
               this.$router.push("/home");
             }
             if (res.data.code == 4001) {
