@@ -10,8 +10,8 @@
         <div>
           <img :src="img1[0].pic" alt />
           <a href="#">{{img1[0].title}}</a>
-          <a href="#">{{img1[0].pri}}</a>
-          <a href="#">{{img1[0].add}}</a>
+          <a class="a2" href="#">{{img1[0].pri}}</a>
+          <a class="a1" href="#" @click="fn()">{{img1[0].add}}</a>
         </div>
       </div>
     </div>
@@ -89,6 +89,11 @@ export default {
       ],
     };
   },
+  methods: {
+    fn() {
+      shopcar: () => import("./shopcar.vue");
+    },
+  },
 };
 </script>
 
@@ -97,7 +102,7 @@ export default {
   border-left: 3px solid rgb(104, 64, 41);
   padding-left: 10px;
   color: rgb(104, 64, 41);
-  margin: 20px 0 0 370px;
+  margin: 40px 0 0 565px;
 }
 .p2 {
   font-size: 12px;
@@ -105,9 +110,17 @@ export default {
 .goods-box {
   display: inline-block;
   text-align: center;
+  margin-left: 60px;
 }
 
 .goods-box a {
   display: block;
+  color: #6c4630;
+}
+.goods-box .a1 {
+  margin-top: 15px;
+}
+.goods-box .a2 {
+  color: #e1b472;
 }
 </style>

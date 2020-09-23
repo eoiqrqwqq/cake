@@ -1,9 +1,10 @@
 <template>
   <div class="classify">
-    <!-- <h1>555555</h1> -->
     <div class="box1">
       <div class="item1">分类：</div>
-      <div class="item3 item2" @click="all1()">全部分类</div>
+      <div class="item3 item2" @click="all1()">
+        <p>全部分类</p>
+      </div>
       <div class="item2" @click="cake()">蛋糕</div>
       <div class="item2" @click="ice()">冰淇淋</div>
       <div class="item2" @click="tea()">咖啡下午茶</div>
@@ -48,7 +49,7 @@ export default {
   data() {
     return {
       all2: false,
-      flag: false,
+      flag: true,
       ok: false,
       coffeetea: false,
       dangao: false,
@@ -147,7 +148,7 @@ export default {
 .box2 {
   margin-top: 25px;
 }
-.item3 {
+.box2 .item3 {
   color: rgb(189, 154, 114);
 }
 .box1 .item2,
