@@ -3,28 +3,20 @@
   <!-- <qiye></qiye> -->
  <topnav></topnav>
  <router-view></router-view>
+ <buttompart></buttompart>
  </div>
 </template>
 
 <script>
 	import topnav from "./components/wang-component/topnav.vue"
 	import goodmodule from "./components/wang-component/goodmodule.vue"
+	import buttompart from "./views/buttompart.vue"
 	export default {
 		name: 'App',
 		components: {
 			topnav,
-			goodmodule
-
-// import qiye from '@/views/qiye.vue'
-// import topnav from "./components/wang-component/topnav.vue"
-// import goodmodule from "./components/wang-component/goodmodule.vue"
-// export default { 
-//   name: 'App',
-//   components: {
-// 	topnav,
-//     // qiye,
-// 	topnav,
-// 	goodmodule
+			goodmodule,
+			buttompart,
   }
 }
 </script>

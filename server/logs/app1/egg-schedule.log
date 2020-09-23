@@ -175,3 +175,15 @@
 2020-09-23 16:52:36,978 INFO 10448 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 41843026ms at 2020-09-24 04:30:00.003
 2020-09-23 16:52:36,978 INFO 10448 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 25643022ms at 2020-09-24 00:00:00.000
 2020-09-23 16:52:36,978 INFO 10448 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 25644022ms at 2020-09-24 00:00:01.000
+2020-09-23 17:50:58,945 INFO 2868 [egg-schedule]: register schedule C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-23 17:50:58,945 INFO 2868 [egg-schedule]: register schedule C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-09-23 17:50:58,945 INFO 2868 [egg-schedule]: register schedule C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-23 17:50:59,428 INFO 20096 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 38340575ms at 2020-09-24 04:30:00.003
+2020-09-23 17:50:59,428 INFO 20096 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 22140572ms at 2020-09-24 00:00:00.000
+2020-09-23 17:50:59,428 INFO 20096 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 22141572ms at 2020-09-24 00:00:01.000
+2020-09-23 21:34:07,432 INFO 3404 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 24952574ms at 2020-09-24 04:30:00.006
+2020-09-23 21:34:07,432 INFO 3404 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 8752568ms at 2020-09-24 00:00:00.000
+2020-09-23 21:34:07,432 INFO 3404 [Timer] C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 8753568ms at 2020-09-24 00:00:01.000
+2020-09-23 21:34:06,944 INFO 21932 [egg-schedule]: register schedule C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-23 21:34:06,944 INFO 21932 [egg-schedule]: register schedule C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-09-23 21:34:06,944 INFO 21932 [egg-schedule]: register schedule C:\Users\17740\Desktop\app2\cake\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

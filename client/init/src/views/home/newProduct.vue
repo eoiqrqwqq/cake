@@ -3,7 +3,7 @@
         <router-link to="/newproduct">
             <img :src="newimg" alt="">
         </router-link>
-        <product></product>
+        <product :data1="1"></product>
     </div>
 </template>
 <script>
