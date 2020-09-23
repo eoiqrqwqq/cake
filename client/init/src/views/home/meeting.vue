@@ -3,7 +3,7 @@
         <router-link to="/meeting">
             <img :src="meeimg" alt="">
         </router-link>
-        <product></product>
+        <product :data1="4"></product>
     </div>
 </template>
 <script>

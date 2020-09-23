@@ -10,7 +10,6 @@
             <img :src="winterimg2" alt="">
         </div>
     </div>
-        <buttompart></buttompart>
    </div>
 </template>
 <script>
