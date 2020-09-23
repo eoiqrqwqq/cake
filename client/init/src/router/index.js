@@ -42,6 +42,66 @@ const router = new VueRouter({
     component: () => import('../views/home.vue')
   },
   {
+    path: '/1',
+    name: '1',
+    component: () => import("@/views/home/1.vue")
+  },
+  {
+    path: '/2',
+    name: '2',
+    component: () => import("@/views/home/2.vue")
+  },
+  {
+    path: '/3',
+    name: '3',
+    component: () => import("@/views/home/3.vue")
+  },
+  {
+    path: '/4',
+    name: '4',
+    component: () => import("@/views/home/4.vue")
+  },
+  {
+    path: '/5',
+    name: '5',
+    component: () => import("@/views/home/5.vue")
+  },
+  {
+    path:'/newproduct',
+    name:'newproduct',
+    component: () => import("@/views/home/newproductqu.vue")
+  },
+  {
+    path:'/birthday',
+    name:'birthday',
+    component: () => import("@/views/home/birthdayqu.vue")
+  },
+  {
+    path:'/children',
+    name:'children',
+    component: () => import("@/views/home/childrenqu.vue")
+  },
+  {
+    path:'/meeting',
+    name:'meeting',
+    component: () => import("@/views/home/meetingqu.vue")
+  },
+  {
+    path:'/dodgegate',
+    name:'dodgegate',
+    component: () => import("@/views/home/dodgegatequ.vue")
+  },
+  {
+    path:'/wintertime',
+    name:'wintertime',
+    component: () => import("@/views/home/wintertime.vue")
+  },
+  {
+    path:'/autumntime',
+    name:'autumntime',
+    component: () => import("@/views/home/autumntime.vue")
+  },
+  {
     path: '/cake',
     name: 'cake',
     component: () => import('../views/cake.vue')
