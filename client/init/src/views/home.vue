@@ -56,8 +56,6 @@
                 </div>
                 <sit-on></sit-on>
             </div>
-       
-		<buttompart class="box2"></buttompart>
 		
     </div>
    
@@ -104,10 +102,6 @@ export default {
 .box{
     width: 1100px;
     margin: 0 auto;
-}
-.box2{
-	width: 100%;
-	margin-top: 50px;
 }
     .imgbox{
         display: flex;

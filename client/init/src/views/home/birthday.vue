@@ -3,7 +3,7 @@
         <router-link to="/birthday">
             <img :src="biyimg" alt="">
         </router-link>
-        <product></product>
+        <product :data1="2"></product>
     </div>
 </template>
 <script>

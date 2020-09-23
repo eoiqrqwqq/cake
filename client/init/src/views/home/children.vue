@@ -3,7 +3,7 @@
         <router-link to="/children">
             <img :src="chhiimg" alt="">
         </router-link>
-        <product></product>
+        <product :data1="3"></product>
     </div>
 </template>
 <script>

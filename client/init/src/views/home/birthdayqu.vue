@@ -7,8 +7,8 @@
             <i></i>
             <span>庆祝感甜点，赞叹生日、生命</span>
         </div>
+        <comm :data2="2"></comm>
     </div>
-    <buttompart></buttompart>
     </div>
 </template>
 <script>
@@ -19,7 +19,7 @@ export default {
         }
     },
     components:{
-        buttompart:()=>import("@/views/buttompart.vue")
+        comm:()=>import("@/views/home/comm.vue")
     }
 }
 </script>

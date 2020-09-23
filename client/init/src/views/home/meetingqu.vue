@@ -6,8 +6,8 @@
             <h2>聚会</h2>
             <i></i>
         </div>
+        <comm :data2="4"></comm>
     </div>
-    <buttompart></buttompart>
    </div>
 </template>
 <script>
@@ -18,7 +18,7 @@ export default {
         }
     },
     components:{
-        buttompart:()=>import("@/views/buttompart.vue")
+        comm:()=>import("@/views/home/comm.vue")
     }
 }
 </script>
