@@ -1,12 +1,17 @@
 <template>
     <div>
         <div class="godingzhi_topbg">
-            <img :src="img" alt="">
+            <img :src="img[0]" alt="">
         </div>
+        <prodetails></prodetails>
     </div>
 </template>
 <script>
+     import prodetails from '@/components/dingzhi_components/prodetails.vue'
 export default {
+    components:{
+        prodetails
+    },
     data() {
         return {
             img:["https://static.21cake.com/themes/site/img/goods/banner/PC-DetailsWinImg-248-01.jpg",
