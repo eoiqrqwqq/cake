@@ -6,14 +6,15 @@
                 <div @click=faq class="kind_user">
                     查看用户常见FAQ >>
                 </div>
-            <div class="cards_box_all">
-                <a class="cards_box" v-for="el in img[1].cards" href="">
+            <div class="cards_box_all" @click=buzhou>
+                <p class="cards_box" v-for="el in img[1].cards" href="">
                     <img class="cards_img" :src="el.cards_img" alt="">
                     <img class="cards_text" :src="el.cards_text" alt="">
-                </a>
+                </p>
             </div>
         </div>
-        <process></process>
+        <kindfaq v-show='flag'></kindfaq>
+        <process v-show='flag1'></process>
        
     </div>
 </template>
@@ -28,6 +29,7 @@
         data() {
             return {
                flag:false,
+               flag1:false,
                 img: [{
                         title: "https://b.21cake.com/activity/site/business_area/img/fdb877011cc47c565b1d1d9250af449c.png"
                     },
@@ -51,30 +53,23 @@
             }
         },
         methods: {
-            open() {
-        this.$alert('这是一段内容', '标题名称', {
-          confirmButtonText: '确定',
-          callback: action => {
-            this.$message({
-              type: 'info',
-              message: `action: ${ action }`
-            });
-          }
-        });
-      },
       faq(){
           this.flag =! this.flag
+      },
+      buzhou(){
+        this.flag1 =! this.flag1
       }
     },
-        mounted() {
-           
-        },
     }
 </script>
 <style>
-
+.cards_box_all{
+    z-index: 0;
+}
     .cards_box {
         display: inline-block;
+        cursor: pointer;
+       
     }
 
     .cards_box img {
