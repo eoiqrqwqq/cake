@@ -59,6 +59,7 @@
 		background-color: white;
 		width: 100%;
 		box-shadow:5px 5px 5px #E9E9E9 ;
+		z-index: 999;
 	}
 	.nav-right{
 		line-height: 75px;

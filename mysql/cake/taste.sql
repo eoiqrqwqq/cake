@@ -17,7 +17,20 @@ CREATE TABLE IF NOT EXISTS `taste` (
   PRIMARY KEY (`Tid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='口味';
 
--- 数据导出被取消选择。
+-- 正在导出表  cake.taste 的数据：~9 rows (大约)
+/*!40000 ALTER TABLE `taste` DISABLE KEYS */;
+INSERT IGNORE INTO `taste` (`Tid`, `taste_all`) VALUES
+	(1, '乳脂奶油'),
+	(2, '慕斯'),
+	(3, '乳酪'),
+	(4, '巧克力'),
+	(5, '坚果'),
+	(6, '水果'),
+	(7, '咖啡'),
+	(8, '冰淇淋'),
+	(9, '应季');
+/*!40000 ALTER TABLE `taste` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

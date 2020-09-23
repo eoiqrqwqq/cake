@@ -11,6 +11,7 @@
             <dingzhi></dingzhi>
             <livemassage></livemassage>
         </div>
+       
     </div>
 </template>
 <script>
@@ -52,6 +53,7 @@
         background-size: 1920px 300px;
         background-repeat: no-repeat;
         line-height: 300px;
+        margin-top: 84px;
     }
 
     .table_row {
