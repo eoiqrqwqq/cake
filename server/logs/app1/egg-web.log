@@ -987,3 +987,19 @@
 2020-09-24 10:12:36,702 INFO 7108 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 10:12:36 GMT+0800 (GMT+08:00)
 2020-09-24 10:12:36,763 INFO 7108 [egg:core] dump config after ready, 59ms
 2020-09-24 12:52:14,552 WARN 7108 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-09-24 16:38:24,729 INFO 12532 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-09-24 16:38:24,757 INFO 12532 [egg-multipart] file mode enable
+2020-09-24 16:38:24,757 INFO 12532 [egg-multipart] will save temporary files to "C:\\Users\\12552\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
+2020-09-24 16:38:24,758 INFO 12532 [egg-mysql] connecting root@127.0.0.1:3306/cake
+2020-09-24 16:38:26,151 INFO 12532 [egg-static] starting static serve /public/ -> C:\Users\12552\Desktop\21cake\cake\server\app\public
+2020-09-24 16:38:26,157 INFO 12532 [egg-security] use methodnoallow middleware
+2020-09-24 16:38:26,163 INFO 12532 [egg-security] use noopen middleware
+2020-09-24 16:38:26,169 INFO 12532 [egg-security] use nosniff middleware
+2020-09-24 16:38:26,173 INFO 12532 [egg-security] use xssProtection middleware
+2020-09-24 16:38:26,180 INFO 12532 [egg-security] use xframe middleware
+2020-09-24 16:38:26,184 INFO 12532 [egg-security] use dta middleware
+2020-09-24 16:38:26,184 INFO 12532 [egg-security] compose 6 middlewares into one security middleware
+2020-09-24 16:38:26,231 INFO 12532 [egg:core] dump config after load, 37ms
+2020-09-24 16:38:26,249 INFO 12532 [egg-watcher:application] watcher start success
+2020-09-24 16:38:26,410 INFO 12532 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 16:38:26 GMT+0800 (GMT+08:00)
+2020-09-24 16:38:26,450 INFO 12532 [egg:core] dump config after ready, 38ms

@@ -494,3 +494,13 @@ name: "ClusterClientNoResponseError"
 pid: 16316
 hostname: DESKTOP-K5ULKD4
 
+2020-09-24 16:38:22,678 INFO 19412 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-09-24 16:38:22,704 INFO 19412 [egg:core] dump config after load, 23ms
+2020-09-24 16:38:22,920 INFO 19412 [egg-watcher] Start watching: ["C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\app","C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\config","C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\mocks","C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\mocks_proxy","C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\app.js"]
+2020-09-24 16:38:22,920 INFO 19412 [egg-watcher] Start watching: "C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\app"
+2020-09-24 16:38:22,921 INFO 19412 [egg-watcher] Start watching: "C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\config"
+2020-09-24 16:38:22,921 INFO 19412 [egg-watcher] Start watching: "C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\mocks"
+2020-09-24 16:38:22,922 INFO 19412 [egg-watcher] Start watching: "C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\mocks_proxy"
+2020-09-24 16:38:22,922 INFO 19412 [egg-watcher] Start watching: "C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\app.js"
+2020-09-24 16:38:22,923 INFO 19412 [egg-watcher:agent] watcher start success
+2020-09-24 16:38:22,994 INFO 19412 [egg:core] dump config after ready, 55ms
