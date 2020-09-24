@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 	<div class="top-nav">
 		<div class="nav-left">
 			<img style="height: 80px;margin-left: 30px;width: 80px;" src="@/assets/logo.jpg" alt="">
@@ -96,15 +97,83 @@
 	a:hover {
 		color: #be9b78;
 	}
+=======
+  <div class="top-nav">
+    <div class="nav-left">
+      <div style="margin-left: 30px">logo</div>
+      <div class="nav-mid">
+        <router-link to="/home">首页</router-link>
+        <router-link to="/cake">蛋糕</router-link>
+        <router-link to="/bread">面包</router-link>
+        <router-link to="/ice">冰淇淋</router-link>
+        <router-link to="/coffice">咖啡下午茶</router-link>
+        <router-link to="/aroundcity">全球送</router-link>
+        <router-link to="/business">企业专区</router-link>
+      </div>
+    </div>
+    <div class="nav-right">
+      <span>APP下载</span>
+      <span>上海↓</span>
+      <router-link to="">消息</router-link>
+      <template v-if="isShow">
+        <router-link to="/login">登录</router-link>
+        <span style="margin: 0 -20px">/</span>
+        <router-link to="/register">注册</router-link>
+      </template>
+      <router-link to="/userinfo" v-else>个人中心</router-link>
+      <router-link to>购物车</router-link>
+    </div>
+  </div>
+</template>
 
-	.nav-left {
-		display: flex;
-	}
+<script>
+export default {
+  data() {
+    return {
+      isShow: "true",
+    };
+  },
+  mounted() {
+    // this.$axios("/userinfo").then((res) => {
+    //   if (res.data.code == 2001) {
+    //     this.isShow = "";
+    //   } else {
+    //     this.isShow = "";
+    //   }
+    // });
+    // console.log(localStorage);
+    if (localStorage.isLogin == "true") {
+      this.isShow = "";
+    } else {
+      this.isShow = "true";
+    }
+  },
+};
+</script>
 
-	.nav-left div {
-		line-height: 80px;
-	}
+<style scoped="scoped">
+a {
+  color: #584133;
+  text-decoration: none;
+  margin: 10px 20px;
+  line-height: 65px;
+  font-size: 14px;
+}
 
+a:hover {
+  color: #be9b78;
+}
+>>>>>>> 7d100fdda81a0eebea475904b000e942c7b49c65
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left div {
+  line-height: 80px;
+}
+
+<<<<<<< HEAD
 	.nav-mid {
 		margin-left: 50px;
 	}
@@ -129,4 +198,29 @@
 		margin: 0 10px;
 		color: #584133;
 	}
+=======
+.nav-mid {
+  margin-left: 50px;
+}
+.top-nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  padding-left: 100px;
+  background-color: white;
+  width: 100%;
+  box-shadow: 5px 5px 5px #e9e9e9;
+  z-index: 9999;
+}
+.nav-right {
+  line-height: 75px;
+  margin-left: 100px;
+}
+span {
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #584133;
+}
+>>>>>>> 7d100fdda81a0eebea475904b000e942c7b49c65
 </style>

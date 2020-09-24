@@ -27,28 +27,28 @@ module.exports = appInfo => {
     listen: {
       path: '',
       port: 7001,
-      hostname: '192.168.3.188',//默认localhost和ip地址,上线时用0.0.0.0
+      hostname: '127.0.0.1',//默认localhost和ip地址,上线时用0.0.0.0
     }
   };
-  // config.mysql = {
-  //   // 单数据库信息配置
-  //   client: {
-  //     // host
-  //     host: '127.0.0.1',
-  //     // 端口号
-  //     port: '3306',
-  //     // 用户名
-  //     user: 'root',
-  //     // 密码
-  //     password: 'root',
-  //     // 数据库名
-  //     database: 'mydb',
-  //   }
-  // };
+  config.mysql = {
+    // 单数据库信息配置
+    client: {
+      // host
+      host: '127.0.0.1',
+      // 端口号
+      port: '3306',
+      // 用户名
+      user: 'root',
+      // 密码
+      password: 'root',
+      // 数据库名
+      database: 'cake',
+    }
+  };
   // 跨域的配置
   //credentials: true,//跨域服务的页面去做cookie缓存
   config.cors = {
-    origin: 'http://192.168.3.188:8080',
+    origin: 'http://127.0.0.1:8082',
     credentials: true,//后端会去前端返回储存数据包，告诉浏览器去做缓存
   };
   // 配置安全验证 post请求

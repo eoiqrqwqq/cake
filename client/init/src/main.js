@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
+<<<<<<< HEAD
 // import $ from 'jquery'
+=======
+>>>>>>> 7d100fdda81a0eebea475904b000e942c7b49c65
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -21,10 +24,13 @@ Vue.prototype.$axios = axios
 // Vue.use(myxx)
 Vue.use(ElementUI);
 
+<<<<<<< HEAD
 import goodmodule from "./components/wang-component/goodmodule.vue"
 import goodmasg from "./components/wang-component/goodmasg.vue"
 Vue.component("goodmasg",goodmasg)
 Vue.component("goodmodule",goodmodule)
+=======
+>>>>>>> 7d100fdda81a0eebea475904b000e942c7b49c65
 
 new Vue({
 	router,

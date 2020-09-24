@@ -5,7 +5,6 @@
         <p>发布时间：2019-03-15</p>
         <img :src="dodegimg" alt="">
     </div>
-    <buttompart></buttompart>
     </div>
 </template>
 <script>

@@ -1,19 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
-
-
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
   mode: 'history',
-  routes:[
-  {
+  routes: [{
     path: '/aroundcity',
     name: 'aroundcity',
 	redirect:"/aroundcity/aroundbread",
     component: () => import('../views/aroundcity.vue'),
+<<<<<<< HEAD
 	children:[
 		{
 			path:"/aroundcity/aroundbread",
@@ -36,6 +33,29 @@ const router = new VueRouter({
 			component: () => import("@/views/aroundcity-views/aroundnut.vue")
 		},
 	]
+=======
+    children: [{
+      path: "/aroundbread",
+      name: "aroundbread",
+      component: () => import("@/views/aroundcity-views/aroundbread.vue")
+    },
+    {
+      path: "/aroundcake",
+      name: "aroundcake",
+      component: () => import("@/views/aroundcity-views/aroundcake.vue")
+    },
+    {
+      path: "/aroundcoffee",
+      name: "aroundcoffee",
+      component: () => import("@/views/aroundcity-views/aroundcoffee.vue")
+    },
+    {
+      path: "/aroundnut",
+      name: "aroundnut",
+      component: () => import("@/views/aroundcity-views/aroundnut.vue")
+    }
+    ]
+>>>>>>> 7d100fdda81a0eebea475904b000e942c7b49c65
   },
   {
     path: '/home',
@@ -68,38 +88,38 @@ const router = new VueRouter({
     component: () => import("@/views/home/5.vue")
   },
   {
-    path:'/newproduct',
-    name:'newproduct',
+    path: '/newproduct',
+    name: 'newproduct',
     component: () => import("@/views/home/newproductqu.vue")
   },
   {
-    path:'/birthday',
-    name:'birthday',
+    path: '/birthday',
+    name: 'birthday',
     component: () => import("@/views/home/birthdayqu.vue")
   },
   {
-    path:'/children',
-    name:'children',
+    path: '/children',
+    name: 'children',
     component: () => import("@/views/home/childrenqu.vue")
   },
   {
-    path:'/meeting',
-    name:'meeting',
+    path: '/meeting',
+    name: 'meeting',
     component: () => import("@/views/home/meetingqu.vue")
   },
   {
-    path:'/dodgegate',
-    name:'dodgegate',
+    path: '/dodgegate',
+    name: 'dodgegate',
     component: () => import("@/views/home/dodgegatequ.vue")
   },
   {
-    path:'/wintertime',
-    name:'wintertime',
+    path: '/wintertime',
+    name: 'wintertime',
     component: () => import("@/views/home/wintertime.vue")
   },
   {
-    path:'/autumntime',
-    name:'autumntime',
+    path: '/autumntime',
+    name: 'autumntime',
     component: () => import("@/views/home/autumntime.vue")
   },
   {
@@ -133,6 +153,7 @@ const router = new VueRouter({
     component: () => import('../views/aroundcity-views/good-vue/bread1.vue')
   },
   {
+<<<<<<< HEAD
     path: '/cake1',
     name: 'cake1',
     component: () => import('../views/aroundcity-views/good-vue/cake1.vue')
@@ -183,6 +204,34 @@ const router = new VueRouter({
     component: () => import('../views/aroundcity-views/good-vue/nut2.vue')
   },
 ]
+=======
+    path: '/login',
+    name: 'Login',
+    component: () => import("@/views/login/login.vue")
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    // component: ()=>
+    component: () => import("@/views/login/register.vue")
+  },
+  {
+    path: '/resetpwd',
+    name: 'Resetpwd',
+    component: () => import("@/views/login/resetpwd.vue"),
+  },
+  {
+    path: '/userinfo',
+    name: 'Userinfo',
+    component: () => import("@/views/login/userinfo/userinfo.vue"),
+  },
+  {
+    path: '/editinfo',
+    name: 'editinfo',
+    component: () => import("@/views/login/userinfo/editinfo.vue"),
+  },
+  ],
+>>>>>>> 7d100fdda81a0eebea475904b000e942c7b49c65
 })
 
 export default router

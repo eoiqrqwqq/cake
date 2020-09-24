@@ -20,7 +20,7 @@
 			<div class="shop-right">
 				<p>商品金额：<span style="color: #000000;">￥0.00</span></p>
 				<p>配送费：<span style="color: #000000;">￥0.00</span></p>
-				<div style="width: %100;height: 1px;border: 1px solid #e2e2e2;background-color: #e2e2e2;margin-top: 10px;"></div>
+				<div style="width: 100%;height: 1px;border: 1px solid #e2e2e2;background-color: #e2e2e2;margin-top: 10px;"></div>
 				<p>合计：<span style="color: red;">￥0.00</span></p>
 				<p style="color: #d5bfa7;">发货及到货时间参考产品详情页说明</p>
 			</div>
