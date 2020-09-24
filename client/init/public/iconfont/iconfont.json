@@ -1,0 +1,30 @@
+{
+  "id": "2067002",
+  "name": "search",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5443323",
+      "name": "优惠券",
+      "font_class": "youhuiquan",
+      "unicode": "e913",
+      "unicode_decimal": 59667
+    },
+    {
+      "icon_id": "9349684",
+      "name": "余额",
+      "font_class": "yue",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "11624431",
+      "name": "代金卡券",
+      "font_class": "daijinkaquan",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    }
+  ]
+}

@@ -180,7 +180,7 @@
       "mapping": {}
     },
     "cors": {
-      "origin": "http://127.0.0.1:8082",
+      "origin": "http://127.0.0.1:8081",
       "credentials": true
     },
     "mysql": {

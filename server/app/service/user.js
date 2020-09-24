@@ -5,14 +5,13 @@ const svgCaptcha = require("svg-captcha")
 class UserService extends Service {
     async editinfo(userinfo) {
         console.log(userinfo);
-        //   intName: '邰静明',
-        //   intEmail: '1255@qq.com',
-        //   radio: '1',
-        //   birth: 'Tue Sep 08 2020 00:00:00 GMT+0800 (中国标准时间)'
         let sql = `update user set name="${userinfo.intName}",email="${userinfo.intEmail}",birth="${userinfo.birth}" ,sex="${userinfo.radio}"
-        where phone="${this.ctx.session.phone1}"`
+        where phone="${this.ctx.session.phone}"`
         let results1 = await this.app.mysql.query(sql)
-        return '66'
+        if (results1) {
+            return { code: 2001, info: "资料更新成功" }
+
+        }
     }
     async userinfo() {
         if (this.ctx.session.phone) {

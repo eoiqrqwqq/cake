@@ -13,6 +13,7 @@
         邮 箱：<input
           type="text"
           v-model="intEmail"
+          @change="change1($event)"
           placeholder="请输入邮箱"
         /><br /><br />
         <div class="block">
@@ -33,7 +34,10 @@
               overflow: hidden;
             "
           ></div>
-          <div class="editBtn" @click="save1()">保存</div>
+          <!-- <div class="editBtn" @click="save1()">保存</div> -->
+          <el-button class="editBtn" :plain="true" @click="save1()"
+            >保存</el-button
+          >
         </div>
       </div>
     </div>
@@ -85,32 +89,62 @@ export default {
     };
   },
   methods: {
+    change1(e) {
+      let reg1 = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
+      if (reg1.test(this.intEmail)) {
+        e.target.style.border = "1px solid #000000";
+      } else {
+        e.target.style.border = "1px solid red";
+      }
+    },
     save1() {
       let reg1 = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
+
       if (this.radio == "1") {
         this.radio = "男";
       } else {
         this.radio = "女";
       }
-
+      this.value2 = `${new Date().getFullYear(this.value2)}-${
+        new Date().getMonth(this.value2) + 1
+      }-${new Date().getDate(this.value2)}`;
       let f = new FormData();
       f.append("intName", this.intName);
       f.append("intEmail", this.intEmail);
       f.append("radio", this.radio);
       f.append("birth", this.value2);
-      console.log(reg1.test(this.intEmail));
-      if (reg1.test(this.intEmail)) {
+      // console.log(reg1.test(this.intEmail));
+      if (reg1.test(this.intEmail) && this.intName) {
         this.$axios
           .post("/editinfo", f, {
             header: { "content-Type": "application/x-www-form-urlencoded" },
           })
           .then((res) => {
             if (res.data.code == 2001) {
+              this.$message({
+                message: "恭喜你，保存信息成功",
+                type: "success",
+                offset: 106,
+              });
               this.$router.push("/userinfo");
             }
           });
+      } else {
+        this.$message({
+          message: "请先完善信息",
+          type: "error",
+          offset: 106,
+        });
       }
     },
+  },
+  mounted() {
+    if (localStorage.isLogin) {
+      this.$axios("/userinfo").then((res) => {
+        this.intPhone = res.data.phone;
+        // this.img = res.data.img[0].img;
+      });
+    }
   },
 };
 </script>
@@ -134,14 +168,16 @@ input:focus {
   border: 1px solid #ccc;
 }
 .editBtn {
-  background-color: #442818;
-  color: #ccc;
   width: 100px;
   padding: 5px 10px;
   text-align: center;
   line-height: 30px;
   margin-top: 20px;
   border-radius: 5px;
+}
+.editBtn:hover {
+  background-color: #442818;
+  color: #ccc;
 }
 .block1 {
   margin-top: 20px;
