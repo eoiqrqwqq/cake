@@ -8,7 +8,32 @@ const router = new VueRouter({
   routes: [{
     path: '/aroundcity',
     name: 'aroundcity',
+	redirect:"/aroundcity/aroundbread",
     component: () => import('../views/aroundcity.vue'),
+<<<<<<< HEAD
+	children:[
+		{
+			path:"/aroundcity/aroundbread",
+			name:"aroundbread",
+			component: () => import("@/views/aroundcity-views/aroundbread.vue")
+		},
+		{
+			path:"/aroundcity/aroundcake",
+			name:"aroundcake",
+			component: () => import("@/views/aroundcity-views/aroundcake.vue")
+		},
+		{
+			path:"/aroundcity/aroundcoffee",
+			name:"aroundcoffee",
+			component: () => import("@/views/aroundcity-views/aroundcoffee.vue")
+		},
+		{
+			path:"/aroundcity/aroundnut",
+			name:"aroundnut",
+			component: () => import("@/views/aroundcity-views/aroundnut.vue")
+		},
+	]
+=======
     children: [{
       path: "/aroundbread",
       name: "aroundbread",
@@ -30,6 +55,7 @@ const router = new VueRouter({
       component: () => import("@/views/aroundcity-views/aroundnut.vue")
     }
     ]
+>>>>>>> 7d100fdda81a0eebea475904b000e942c7b49c65
   },
   {
     path: '/home',
@@ -127,6 +153,58 @@ const router = new VueRouter({
     component: () => import('../views/aroundcity-views/good-vue/bread1.vue')
   },
   {
+<<<<<<< HEAD
+    path: '/cake1',
+    name: 'cake1',
+    component: () => import('../views/aroundcity-views/good-vue/cake1.vue')
+  },
+  {
+    path: '/cake2',
+    name: 'cake2',
+    component: () => import('../views/aroundcity-views/good-vue/cake2.vue')
+  },
+  {
+    path: '/coffee1',
+    name: 'coffee1',
+    component: () => import('../views/aroundcity-views/good-vue/coffee1.vue')
+  },
+  {
+    path: '/coffee2',
+    name: 'coffee2',
+    component: () => import('../views/aroundcity-views/good-vue/coffee2.vue')
+  },
+  {
+    path: '/coffee3',
+    name: 'coffee3',
+    component: () => import('../views/aroundcity-views/good-vue/coffee3.vue')
+  },
+  {
+    path: '/coffee4',
+    name: 'coffee4',
+    component: () => import('../views/aroundcity-views/good-vue/coffee4.vue')
+  },
+  {
+    path: '/coffee5',
+    name: 'coffee5',
+    component: () => import('../views/aroundcity-views/good-vue/coffee5.vue')
+  },
+  {
+    path: '/coffee6',
+    name: 'coffee6',
+    component: () => import('../views/aroundcity-views/good-vue/coffee6.vue')
+  },
+  {
+    path: '/nut1',
+    name: 'nut1',
+    component: () => import('../views/aroundcity-views/good-vue/nut1.vue')
+  },
+  {
+    path: '/nut2',
+    name: 'nut2',
+    component: () => import('../views/aroundcity-views/good-vue/nut2.vue')
+  },
+]
+=======
     path: '/login',
     name: 'Login',
     component: () => import("@/views/login/login.vue")
@@ -158,6 +236,7 @@ const router = new VueRouter({
     component: () => import("@/views/login/userinfo/useraddress.vue"),
   },
   ],
+>>>>>>> 7d100fdda81a0eebea475904b000e942c7b49c65
 })
 
 export default router

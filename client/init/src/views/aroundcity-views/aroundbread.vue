@@ -9,7 +9,7 @@
 		<div class="bread-content" @click="fn('bread1')">
 			<img src="https://www.21cake.com/upload/images/30de120e9e011238620bbde77302bcb0.jpg" alt="">
 			<p>21cake观光月饼礼盒</p>
-			<p style="color: #BB9772;font-size: 12px;">￥298/410g(6枚)</p>
+			<p style="color: #BB9772;font-size: 12px;" @click="fn('bread1')">￥298/410g(6枚)</p>
 			<button>订购</button>
 		</div>
 	</div>
@@ -30,13 +30,13 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	.aroundbread{
 		width: 1200px;
 		margin: 0 auto;
 		display: flex;
 	}
-	img{
+	.bread-content img{
 		width: 228px;
 	}
 	.bread-content{

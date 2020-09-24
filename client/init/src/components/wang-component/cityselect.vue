@@ -5,16 +5,6 @@
 			<el-option v-for="item in proData_" :key="item.pk" :label="item.pv" :value="item.pk">
 			</el-option>
 		</el-select>
-
-		<el-select v-model="value" placeholder="请选择">
-			<el-option v-for="item in proData_" :key="item.value" :label="item.label" :value="item.value">
-			</el-option>
-		</el-select>
-
-		<el-select v-model="value" placeholder="请选择">
-			<el-option v-for="item in proData_" :key="item.value" :label="item.label" :value="item.value">
-			</el-option>
-		</el-select>
 	</div>
 </template>
 

@@ -1,10 +1,10 @@
 <template>
 	<div class="module-box">
 		<div class="big-img">
-			<img :src="el.url" alt="" v-for="(el,id) in arr" :key="id" v-if="id==currentSort">
+			<img :src="el.url" alt="" v-for="(el,id) in masg" :key="id" v-if="id==currentSort">
 		</div>
 		<div class="small-img">
-			<img :src="el.url" alt="" v-for="(el,id) in arr" :key="id" :class="{'boder':currentSort === id}" @mouseenter="show($event,id)">
+			<img :src="el.url" alt="" v-for="(el,id) in masg" :key="id" :class="{'boder':currentSort === id}" @mouseenter="show($event,id)">
 		</div>
 	</div>
 </template>
@@ -15,25 +15,9 @@
 			return {
 				flag: false,
 				currentSort: 0,
-				arr: [{
-						url: "https://static.21cake.com//upload/images/0d3e13abee8529b98cfc2bb9b453f2d8.jpg",
-						id: "1"
-					},
-					{
-						url: "https://static.21cake.com//upload/images/7189ba6db41e975d55815cb068ecbf95.jpg",
-						id: "2"
-					},
-					{
-						url: "https://static.21cake.com//upload/images/125ca283af35924f40252c030690fe2c.jpg",
-						id: "3"
-					},
-					{
-						url: "https://static.21cake.com//upload/images/606be8c0b49e655b2eb00e72a29741e5.jpg",
-						id: "4"
-					},
-				]
 			}
 		},
+		props:["masg"],
 		methods: {
 			show(e, id) {
 				this.currentSort = id

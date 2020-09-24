@@ -2,10 +2,10 @@
 	<div class="aroundcity-content">
 		<div class="back"></div>
 		<div class="aroundcity-nav">
-			<router-link to="/aroundbread">月饼</router-link>
-			<router-link to="/aroundcake">蛋糕</router-link>
-			<router-link to="/aroundcoffee">咖啡</router-link>
-			<router-link to="/aroundnut">坚果/果干</router-link>
+			<router-link to="/aroundcity/aroundbread">月饼</router-link>
+			<router-link to="/aroundcity/aroundcake">蛋糕</router-link>
+			<router-link to="/aroundcity/aroundcoffee">咖啡</router-link>
+			<router-link to="/aroundcity/aroundnut">坚果/果干</router-link>
 		</div>
 		<router-view></router-view>
 		<div class="masage">已选择的商品(0)</div><br>

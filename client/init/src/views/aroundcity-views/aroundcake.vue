@@ -6,13 +6,13 @@
 			<p style="color: #BB9772;font-size: 12px;">￥198/454g(1.0磅)</p>
 			<button>订购</button>
 		</div>
-		<div class="cake-content">
+		<div class="cake-content" @click="fn('cake2')">
 			<img src="https://www.21cake.com/upload/images/ddcc8ede50263527752974fb9652e809.jpg" alt="">
 			<p>新杰瑞（增区配送）</p>
 			<p style="color: #BB9772;font-size: 12px;">¥198/454g(1.0磅)</p>
 			<button>订购</button>
 		</div>
-		<div class="cake-content">
+		<div class="cake-content" @click="fn('cake1')">
 			<img src="https://www.21cake.com/upload/images/b91a559fb060f801b0dd256ff40ac8d1.jpg" alt="">
 			<p>百香果酸乳酪慕斯蛋糕木糖醇款（...</p>
 			<p style="color: #BB9772;font-size: 12px;">¥198/454g(1.0磅)</p>
@@ -28,7 +28,7 @@
 		},
 		methods:{
 			fn(str){
-				// this.$route.push("/cake1")
+				this.$router.push(`/${str}`)
 			}
 		}
 	}
