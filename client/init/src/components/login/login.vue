@@ -1,17 +1,29 @@
 <template>
   <div>
     <div class="myinput">
-      <input type="text" class="zhanghao" v-model="inp1" @change="change1()" placeholder="请输入您的账号" />
-      <input type="password" class="pwd" v-model="pwd" placeholder="请输入密码" />
-      <div :style="{visibility:isShow}" class="hidden1">{{msg}}</div>
+      <input
+        type="text"
+        class="zhanghao"
+        v-model="inp1"
+        @change="change1()"
+        placeholder="请输入您的账号"
+      />
+      <input
+        type="password"
+        class="pwd"
+        v-model="pwd"
+        placeholder="请输入密码"
+      />
+      <div :style="{ visibility: isShow }" class="hidden1">{{ msg }}</div>
       <div class="loginBtn1" @click="login()">登录</div>
       <div class="anniu">
         <label class="anniu_l">
-          <input type="checkbox" v-model="isChecked" :checked="isChecked" name id />
+          <input type="checkbox" v-model="isChecked" checked />
           <span>记住账号</span>
         </label>
         <div>
-          <router-link to="/resetpwd">忘记密码</router-link>&nbsp;&nbsp;&nbsp;&nbsp;
+          <router-link to="/resetpwd">忘记密码</router-link
+          >&nbsp;&nbsp;&nbsp;&nbsp;
           <router-link to="/register">去注册</router-link>
         </div>
       </div>

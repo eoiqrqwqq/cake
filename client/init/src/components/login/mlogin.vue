@@ -21,7 +21,7 @@
       <div class="btn" @click="login()">登录</div>
       <div class="anniu">
         <div>
-          <input type="checkbox" name id />
+          <input type="checkbox" checked name id />
           <span>记住账号</span>
         </div>
         <div>

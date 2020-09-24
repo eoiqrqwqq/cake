@@ -10,7 +10,7 @@
           <div class="u1">
             <router-link to="/editinfo">编辑个人资料</router-link>
           </div>
-          <div class="u2">地址管理</div>
+          <div @click="useraddress()" class="u2">地址管理</div>
           <div class="u3">订单管理</div>
         </div>
       </div>
@@ -51,6 +51,9 @@ export default {
   methods: {
     changes() {
       console.log(this.toux);
+    },
+    useraddress() {
+      this.$router.push("/useraddress");
     },
   },
   mounted() {

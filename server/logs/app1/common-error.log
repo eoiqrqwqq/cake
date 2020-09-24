@@ -68,3 +68,11 @@ name: "ER_TRUNCATED_WRONG_VALUEError"
 pid: 2588
 hostname: DESKTOP-K5ULKD4
 
+2020-09-24 12:52:14,557 ERROR 16316 nodejs.ClusterClientNoResponseError: client no response in 937634ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\Users\12552\Desktop\21cake\cake\server\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 16316
+hostname: DESKTOP-K5ULKD4
+

@@ -486,3 +486,11 @@
 2020-09-24 10:12:35,033 INFO 16316 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\app\\service\\user.js","stat":{"dev":1156483555,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"blksize":4096,"ino":9288674231571872,"size":5299,"blocks":16,"atimeMs":1600913555020.6494,"mtimeMs":1600913555020.6494,"ctimeMs":1600913555020.6494,"birthtimeMs":1600853578900.8164,"atime":"2020-09-24T02:12:35.021Z","mtime":"2020-09-24T02:12:35.021Z","ctime":"2020-09-24T02:12:35.021Z","birthtime":"2020-09-23T09:32:58.901Z"},"remove":false,"isDirectory":false,"isFile":true}
 2020-09-24 10:12:35,035 INFO 16316 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\app\\service\\user.js","stat":{"dev":1156483555,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"blksize":4096,"ino":9288674231571872,"size":5299,"blocks":16,"atimeMs":1600913555020.6494,"mtimeMs":1600913555020.6494,"ctimeMs":1600913555020.6494,"birthtimeMs":1600853578900.8164,"atime":"2020-09-24T02:12:35.021Z","mtime":"2020-09-24T02:12:35.021Z","ctime":"2020-09-24T02:12:35.021Z","birthtime":"2020-09-23T09:32:58.901Z"},"remove":false,"isDirectory":false,"isFile":true}
 2020-09-24 10:12:36,801 WARN 16316 [ClusterClient:Connection] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-09-24 12:52:14,559 ERROR 16316 nodejs.ClusterClientNoResponseError: client no response in 937634ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\Users\12552\Desktop\21cake\cake\server\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 16316
+hostname: DESKTOP-K5ULKD4
+

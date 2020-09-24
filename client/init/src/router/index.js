@@ -152,6 +152,11 @@ const router = new VueRouter({
     name: 'editinfo',
     component: () => import("@/views/login/userinfo/editinfo.vue"),
   },
+  {
+    path: '/useraddress',
+    name: 'useraddress',
+    component: () => import("@/views/login/userinfo/useraddress.vue"),
+  },
   ],
 })
 

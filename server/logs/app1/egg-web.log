@@ -986,3 +986,4 @@
 2020-09-24 10:12:36,700 INFO 7108 [egg-watcher:application] watcher start success
 2020-09-24 10:12:36,702 INFO 7108 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 10:12:36 GMT+0800 (GMT+08:00)
 2020-09-24 10:12:36,763 INFO 7108 [egg:core] dump config after ready, 59ms
+2020-09-24 12:52:14,552 WARN 7108 [ClusterClient:Watcher] follower closed, and try to init it again

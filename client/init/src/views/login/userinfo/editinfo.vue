@@ -2,9 +2,13 @@
   <div>
     <div class="editinfoBox">
       <div class="tip">基本资料</div>
-      <hr />
+      <el-divider content-position="left"></el-divider>
       <div class="editBody">
-        姓 名：<input type="text" v-model="intName" /><br /><br />
+        姓 名：<input
+          type="text"
+          v-model="intName"
+          placeholder="请输入您的名字"
+        /><br /><br />
         性 别：
         <el-radio v-model="radio" label="1">男</el-radio>
         <el-radio v-model="radio" label="2">女</el-radio><br /><br />
@@ -153,6 +157,10 @@ input::-webkit-input-placeholder {
   font-size: 12px;
   color: rgba(68, 40, 24, 0.5);
 }
+.editinfoBox input {
+  padding: 8px 15px 8px 5px;
+  border: 1px solid rgb(220, 223, 230);
+}
 input:focus {
   outline: none;
 }
@@ -181,5 +189,10 @@ input:focus {
 }
 .block1 {
   margin-top: 20px;
+}
+.tip {
+  color: #442818;
+  font-size: 18px;
+  font-weight: 700;
 }
 </style>
