@@ -10,7 +10,6 @@ class UserService extends Service {
         let results1 = await this.app.mysql.query(sql)
         if (results1) {
             return { code: 2001, info: "资料更新成功" }
-
         }
     }
     async userinfo() {

@@ -1,54 +1,3 @@
-<<<<<<< HEAD
-2020-09-24 00:00:01,142 INFO 7864 [egg-logrotator] app logger reload: got log-reload message
-2020-09-24 00:05:07,340 INFO 8736 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-09-24 00:05:07,369 INFO 8736 [egg-multipart] file mode enable
-2020-09-24 00:05:07,369 INFO 8736 [egg-multipart] will save temporary files to "C:\\Users\\12552\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
-2020-09-24 00:05:07,370 INFO 8736 [egg-mysql] connecting root@127.0.0.1:3306/cake
-2020-09-24 00:05:07,610 INFO 8736 [egg-static] starting static serve /public/ -> C:\Users\12552\Desktop\21cake\cake\server\app\public
-2020-09-24 00:05:07,613 INFO 8736 [egg-security] use methodnoallow middleware
-2020-09-24 00:05:07,614 INFO 8736 [egg-security] use noopen middleware
-2020-09-24 00:05:07,615 INFO 8736 [egg-security] use nosniff middleware
-2020-09-24 00:05:07,616 INFO 8736 [egg-security] use xssProtection middleware
-2020-09-24 00:05:07,616 INFO 8736 [egg-security] use xframe middleware
-2020-09-24 00:05:07,617 INFO 8736 [egg-security] use dta middleware
-2020-09-24 00:05:07,617 INFO 8736 [egg-security] compose 6 middlewares into one security middleware
-2020-09-24 00:05:07,658 INFO 8736 [egg:core] dump config after load, 34ms
-2020-09-24 00:05:07,678 INFO 8736 [egg-watcher:application] watcher start success
-2020-09-24 00:05:07,680 INFO 8736 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 00:05:07 GMT+0800 (GMT+08:00)
-2020-09-24 00:05:07,750 INFO 8736 [egg:core] dump config after ready, 68ms
-2020-09-24 00:05:09,097 INFO 844 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-09-24 00:05:09,125 INFO 844 [egg-multipart] file mode enable
-2020-09-24 00:05:09,125 INFO 844 [egg-multipart] will save temporary files to "C:\\Users\\12552\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
-2020-09-24 00:05:09,125 INFO 844 [egg-mysql] connecting root@127.0.0.1:3306/cake
-2020-09-24 00:05:09,302 INFO 844 [egg-static] starting static serve /public/ -> C:\Users\12552\Desktop\21cake\cake\server\app\public
-2020-09-24 00:05:09,304 INFO 844 [egg-security] use methodnoallow middleware
-2020-09-24 00:05:09,304 INFO 844 [egg-security] use noopen middleware
-2020-09-24 00:05:09,305 INFO 844 [egg-security] use nosniff middleware
-2020-09-24 00:05:09,306 INFO 844 [egg-security] use xssProtection middleware
-2020-09-24 00:05:09,306 INFO 844 [egg-security] use xframe middleware
-2020-09-24 00:05:09,307 INFO 844 [egg-security] use dta middleware
-2020-09-24 00:05:09,307 INFO 844 [egg-security] compose 6 middlewares into one security middleware
-2020-09-24 00:05:09,341 INFO 844 [egg:core] dump config after load, 30ms
-2020-09-24 00:05:09,355 INFO 844 [egg-watcher:application] watcher start success
-2020-09-24 00:05:09,356 INFO 844 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 00:05:09 GMT+0800 (GMT+08:00)
-2020-09-24 00:05:09,419 INFO 844 [egg:core] dump config after ready, 61ms
-2020-09-24 00:05:15,516 INFO 20488 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-09-24 00:05:15,544 INFO 20488 [egg-multipart] file mode enable
-2020-09-24 00:05:15,544 INFO 20488 [egg-multipart] will save temporary files to "C:\\Users\\12552\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
-2020-09-24 00:05:15,544 INFO 20488 [egg-mysql] connecting root@127.0.0.1:3306/cake
-2020-09-24 00:05:15,745 INFO 20488 [egg-static] starting static serve /public/ -> C:\Users\12552\Desktop\21cake\cake\server\app\public
-2020-09-24 00:05:15,748 INFO 20488 [egg-security] use methodnoallow middleware
-2020-09-24 00:05:15,749 INFO 20488 [egg-security] use noopen middleware
-2020-09-24 00:05:15,750 INFO 20488 [egg-security] use nosniff middleware
-2020-09-24 00:05:15,751 INFO 20488 [egg-security] use xssProtection middleware
-2020-09-24 00:05:15,752 INFO 20488 [egg-security] use xframe middleware
-2020-09-24 00:05:15,753 INFO 20488 [egg-security] use dta middleware
-2020-09-24 00:05:15,753 INFO 20488 [egg-security] compose 6 middlewares into one security middleware
-2020-09-24 00:05:15,789 INFO 20488 [egg:core] dump config after load, 30ms
-2020-09-24 00:05:15,806 INFO 20488 [egg-watcher:application] watcher start success
-2020-09-24 00:05:15,808 INFO 20488 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 00:05:15 GMT+0800 (GMT+08:00)
-2020-09-24 00:05:15,866 INFO 20488 [egg:core] dump config after ready, 57ms
-=======
 2020-09-21 13:39:57,009 INFO 11020 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\DELL\\Desktop\\cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
 2020-09-21 13:39:57,042 INFO 11020 [egg-multipart] file mode enable
 2020-09-21 13:39:57,042 INFO 11020 [egg-multipart] will save temporary files to "C:\\Users\\DELL\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
@@ -825,7 +774,6 @@
 2020-09-23 21:34:07,401 INFO 21932 [egg-watcher:application] watcher start success
 2020-09-23 21:34:07,404 INFO 21932 [egg-mysql] instance[0] status OK, rds currentTime: Wed Sep 23 2020 21:34:07 GMT+0800 (GMT+08:00)
 2020-09-23 21:34:07,420 INFO 21932 [egg:core] dump config after ready, 8ms
->>>>>>> b5d0a0a3ee16bd13d7f01e19416be63988711064
 2020-09-24 00:58:30,586 INFO 12256 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
 2020-09-24 00:58:30,611 INFO 12256 [egg-multipart] file mode enable
 2020-09-24 00:58:30,611 INFO 12256 [egg-multipart] will save temporary files to "C:\\Users\\12552\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
@@ -1003,3 +951,36 @@
 2020-09-24 16:38:26,249 INFO 12532 [egg-watcher:application] watcher start success
 2020-09-24 16:38:26,410 INFO 12532 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 16:38:26 GMT+0800 (GMT+08:00)
 2020-09-24 16:38:26,450 INFO 12532 [egg:core] dump config after ready, 38ms
+2020-09-24 18:19:18,595 INFO 8580 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-09-24 18:19:18,622 INFO 8580 [egg-multipart] file mode enable
+2020-09-24 18:19:18,622 INFO 8580 [egg-multipart] will save temporary files to "C:\\Users\\12552\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
+2020-09-24 18:19:18,622 INFO 8580 [egg-mysql] connecting root@127.0.0.1:3306/cake
+2020-09-24 18:19:19,938 INFO 8580 [egg-static] starting static serve /public/ -> C:\Users\12552\Desktop\21cake\cake\server\app\public
+2020-09-24 18:19:19,945 INFO 8580 [egg-security] use methodnoallow middleware
+2020-09-24 18:19:19,950 INFO 8580 [egg-security] use noopen middleware
+2020-09-24 18:19:19,955 INFO 8580 [egg-security] use nosniff middleware
+2020-09-24 18:19:19,961 INFO 8580 [egg-security] use xssProtection middleware
+2020-09-24 18:19:19,966 INFO 8580 [egg-security] use xframe middleware
+2020-09-24 18:19:19,971 INFO 8580 [egg-security] use dta middleware
+2020-09-24 18:19:19,971 INFO 8580 [egg-security] compose 6 middlewares into one security middleware
+2020-09-24 18:19:20,016 INFO 8580 [egg:core] dump config after load, 27ms
+2020-09-24 18:19:20,065 INFO 8580 [egg-watcher:application] watcher start success
+2020-09-24 18:19:20,161 INFO 8580 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 18:19:20 GMT+0800 (GMT+08:00)
+2020-09-24 18:19:20,194 INFO 8580 [egg:core] dump config after ready, 32ms
+2020-09-24 20:56:03,532 WARN 8580 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-09-24 21:28:06,639 INFO 9084 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\12552\\Desktop\\21cake\\cake\\server\\logs\\app1","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"app1-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-09-24 21:28:06,686 INFO 9084 [egg-multipart] file mode enable
+2020-09-24 21:28:06,686 INFO 9084 [egg-multipart] will save temporary files to "C:\\Users\\12552\\AppData\\Local\\Temp\\egg-multipart-tmp\\app1", cleanup job cron: "0 30 4 * * *"
+2020-09-24 21:28:06,687 INFO 9084 [egg-mysql] connecting root@127.0.0.1:3306/cake
+2020-09-24 21:28:10,046 INFO 9084 [egg-static] starting static serve /public/ -> C:\Users\12552\Desktop\21cake\cake\server\app\public
+2020-09-24 21:28:10,064 INFO 9084 [egg-security] use methodnoallow middleware
+2020-09-24 21:28:10,077 INFO 9084 [egg-security] use noopen middleware
+2020-09-24 21:28:10,091 INFO 9084 [egg-security] use nosniff middleware
+2020-09-24 21:28:10,104 INFO 9084 [egg-security] use xssProtection middleware
+2020-09-24 21:28:10,117 INFO 9084 [egg-security] use xframe middleware
+2020-09-24 21:28:10,134 INFO 9084 [egg-security] use dta middleware
+2020-09-24 21:28:10,134 INFO 9084 [egg-security] compose 6 middlewares into one security middleware
+2020-09-24 21:28:10,262 INFO 9084 [egg:core] dump config after load, 75ms
+2020-09-24 21:28:10,293 INFO 9084 [egg-mysql] instance[0] status OK, rds currentTime: Thu Sep 24 2020 21:28:10 GMT+0800 (GMT+08:00)
+2020-09-24 21:28:10,296 INFO 9084 [egg-watcher:application] watcher start success
+2020-09-24 21:28:10,367 INFO 9084 [egg:core] dump config after ready, 68ms
